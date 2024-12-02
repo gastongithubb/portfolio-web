@@ -81,7 +81,7 @@ const Portfolio: React.FC = () => {
         <h2 className="text-3xl text-[#84A98C] mb-6">Sobre Mí</h2>
         <div className="flex items-center">
           <Image
-            src="/profile-2.png"
+            src="/profile.webp"
             alt="Foto de perfil"
             width={250}
             height={250}
