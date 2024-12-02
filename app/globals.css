@@ -2,8 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Puedes añadir variables CSS personalizadas */
-:root {
-  --background: #2F3E46;
-  --foreground: #CAD2C5;
+@layer base {
+  :root {
+    --background: 255, 109, 0;
+    --foreground: 36, 0, 70;
+  }
+
+  .dark {
+    --background: 36, 0, 70;
+    --foreground: 255, 109, 0;
+  }
+}
+
+body {
+  font-family: var(--font-poppins);
+}
+
+/* Mejoras en la scrollbar para mejor integración con el diseño */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Mejoras en la selección de texto */
+::selection {
+  background: white;
+  color: #ff8500;
+}
+
+.dark ::selection {
+  background: #5a189a;
+  color: white;
 }
