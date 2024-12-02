@@ -9,8 +9,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: '#CAD2C5',
+          light: '#84A98C',
+          dark: '#52796F',
+        },
+        background: {
+          DEFAULT: '#2F3E46',
+          secondary: '#354F52'
+        }
+      },
+      fontFamily: {
+        sans: ['SF Pro', 'system-ui', 'sans-serif'],
       },
     },
   },
